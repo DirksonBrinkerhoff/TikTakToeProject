@@ -11,7 +11,6 @@ public class UserInput
 				{
 				if(coordinate.equals("A1"))
 					{
-					PlayGame.myGrid[0][0] = "X";
 					if(PlayGame.myGrid[0][0].equals(" "))
 						{
 						PlayGame.myGrid[0][0] = "X";
@@ -22,8 +21,7 @@ public class UserInput
 						}
 					}
 				else if(coordinate.equals("A2"))
-				{
-					PlayGame.myGrid[0][1] = "X";
+					{
 					if(PlayGame.myGrid[0][1].equals(" "))
 						{
 						PlayGame.myGrid[0][1] = "X";
@@ -35,7 +33,6 @@ public class UserInput
 					}
 				else if(coordinate.equals("A3"))
 					{
-						PlayGame.myGrid[0][2] = "X";
 						if(PlayGame.myGrid[0][2].equals(" "))
 							{
 							PlayGame.myGrid[0][2] = "X";
@@ -47,60 +44,70 @@ public class UserInput
 					}
 				else if(coordinate.equals("B1"))
 					{
-						PlayGame.myGrid[1][0] = "X";
 						if(PlayGame.myGrid[1][0].equals(" "))
 							{
-								PlayGame.myGrid[1][0] = "X";
+							PlayGame.myGrid[1][0] = "X";
 							}
 						else
 							{
-								userInputXandOCordinates();
+							userInputXandOCordinates();
 							}
 					}
 				else if(coordinate.equals("B2"))
 					{
-						PlayGame.myGrid[1][1] = "X";
 						if(PlayGame.myGrid[1][1].equals(" "))
 							{
-								PlayGame.myGrid[1][1] = "X";
+							PlayGame.myGrid[1][1] = "X";
 							}
 						else
 							{
-								userInputXandOCordinates();
+							userInputXandOCordinates();
 							}
 					}
 				else if(coordinate.equals("B3"))
 					{
-						PlayGame.myGrid[1][2] = "X";
 						if(PlayGame.myGrid[1][2].equals(" "))
 							{
-								PlayGame.myGrid[1][2] = "X";
+							PlayGame.myGrid[1][2] = "X";
 							}
 						else
 							{
-								userInputXandOCordinates();
+							userInputXandOCordinates();
 							}
 					}
 				else if(coordinate.equals("C1"))
 					{
-						PlayGame.myGrid[2][0] = "X";
-						PlayGame.myGrid[2][0] = "X";
-						if(PlayGame.myGrid[0][2].equals(" "))
+						if(PlayGame.myGrid[2][0].equals(" "))
 							{
-								PlayGame.myGrid[0][1] = "X";
+							PlayGame.myGrid[2][0] = "X";
 							}
 						else
 							{
-								userInputXandOCordinates();
+							userInputXandOCordinates();
 							}
 					}
 				else if(coordinate.equals("C2"))
 					{
-						PlayGame.myGrid[2][1] = "X";
+						
+						if(PlayGame.myGrid[2][1].equals(" "))
+							{
+							PlayGame.myGrid[2][1] = "X";
+							}
+						else
+							{
+							userInputXandOCordinates();
+							}
 					}
 				else
 					{
-						PlayGame.myGrid[2][2] = "X"; 
+						if(PlayGame.myGrid[2][2].equals(" "))
+							{
+							PlayGame.myGrid[2][2] = "X";
+							}
+						else
+							{
+							userInputXandOCordinates();
+							}
 					}
 				}
 			
@@ -109,39 +116,102 @@ public class UserInput
 				{
 				if(coordinate.equals("A1"))
 					{
-						PlayGame.myGrid[0][0] = "O";
+						if(PlayGame.myGrid[0][0].equals(" "))
+							{
+							PlayGame.myGrid[0][0] = "O";
+							}
+						else
+							{
+							userInputXandOCordinates();
+							}
 					}
 				else if(coordinate.equals("A2"))
 					{
-						PlayGame.myGrid[0][1] = "O";
+						if(PlayGame.myGrid[0][1].equals(" "))
+							{
+							PlayGame.myGrid[0][1] = "O";
+							}
+						else
+							{
+							userInputXandOCordinates();
+							}
 					}
 				else if(coordinate.equals("A3"))
 					{
-						PlayGame.myGrid[0][2] = "O";
+						if(PlayGame.myGrid[0][2].equals(" "))
+							{
+								PlayGame.myGrid[0][2] = "O";
+							}
+						else
+							{
+								userInputXandOCordinates();
+							}
 					}
 				else if(coordinate.equals("B1"))
 					{
-						PlayGame.myGrid[1][0] = "O";
+						if(PlayGame.myGrid[1][0].equals(" "))
+							{
+								PlayGame.myGrid[1][0] = "O";
+							}
+						else
+							{
+								userInputXandOCordinates();
+							}
 					}
 				else if(coordinate.equals("B2"))
 					{
-						PlayGame.myGrid[1][1] = "O";
+						if(PlayGame.myGrid[1][1].equals(" "))
+							{
+								PlayGame.myGrid[1][1] = "O";
+							}
+						else
+							{
+								userInputXandOCordinates();
+							}
 					}
 				else if(coordinate.equals("B3"))
 					{
-						PlayGame.myGrid[1][2] = "O";
+						if(PlayGame.myGrid[1][2].equals(" "))
+							{
+								PlayGame.myGrid[1][2] = "O";
+							}
+						else
+							{
+								userInputXandOCordinates();
+							}
 					}
 				else if(coordinate.equals("C1"))
 					{
-						PlayGame.myGrid[2][0] = "O";
+						if(PlayGame.myGrid[2][0].equals(" "))
+							{
+								PlayGame.myGrid[2][0] = "O";
+							}
+						else
+							{
+								userInputXandOCordinates();
+							}
 					}
 				else if(coordinate.equals("C2"))
 					{
-						PlayGame.myGrid[2][1] = "O";
+						if(PlayGame.myGrid[2][1].equals(" "))
+							{
+								PlayGame.myGrid[2][1] = "O";
+							}
+						else
+							{
+								userInputXandOCordinates();
+							}
 					}
 				else
 					{
-						PlayGame.myGrid[2][2] = "O"; 
+						if(PlayGame.myGrid[2][2].equals(" "))
+							{
+								PlayGame.myGrid[2][2] = "O";
+							}
+						else
+							{
+								userInputXandOCordinates();
+							}
 					}
 				}
 			}
