@@ -11,15 +11,15 @@ public class PlayGame
 		static String firstInput; 
 		public static void main(String[] args)
 			{
-				//First question
-				System.out.println("Please choose: X or O?");
-				//First input
-				firstInput = PlayGame.userStringInput.nextLine(); 
 				Board.prepareBoard();
 				Board.displayBoard();	
 				while(gameNotFinished)
 					{
-					UserInput.userInputXandOCordinates();
+					UserInput.userInputXCordinates();
+					Checking.isWonGame();
+					Board.displayBoard();
+					
+					UserInput.userInputOCordinates();
 					Checking.isWonGame();
 					Board.displayBoard();
 					}

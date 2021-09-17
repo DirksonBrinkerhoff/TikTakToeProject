@@ -1,15 +1,13 @@
 public class UserInput
 	{
-		public static void userInputXandOCordinates()
+		public static void userInputXCordinates()
 			{
 			//Prompt user with coordinate question
 			System.out.println("Please input a cordinate");
 			//Allow user to input coordinate
 			String coordinate = PlayGame.userStringInput.nextLine();
 			//X if statement
-			if(PlayGame.firstInput.equals("X"))
-				{
-				if(coordinate.equals("A1"))
+			if(coordinate.equals("A1"))
 					{
 					if(PlayGame.myGrid[0][0].equals(" "))
 						{
@@ -17,7 +15,7 @@ public class UserInput
 						}
 					else
 						{
-						userInputXandOCordinates();
+						userInputXCordinates();
 						}
 					}
 				else if(coordinate.equals("A2"))
@@ -28,7 +26,7 @@ public class UserInput
 						}
 					else
 						{
-						userInputXandOCordinates();
+						userInputXCordinates();
 						}
 					}
 				else if(coordinate.equals("A3"))
@@ -39,7 +37,7 @@ public class UserInput
 							}
 						else
 							{
-							userInputXandOCordinates();
+							userInputXCordinates();
 							}
 					}
 				else if(coordinate.equals("B1"))
@@ -50,7 +48,7 @@ public class UserInput
 							}
 						else
 							{
-							userInputXandOCordinates();
+							userInputXCordinates();
 							}
 					}
 				else if(coordinate.equals("B2"))
@@ -61,7 +59,7 @@ public class UserInput
 							}
 						else
 							{
-							userInputXandOCordinates();
+							userInputXCordinates();
 							}
 					}
 				else if(coordinate.equals("B3"))
@@ -72,7 +70,7 @@ public class UserInput
 							}
 						else
 							{
-							userInputXandOCordinates();
+							userInputXCordinates();
 							}
 					}
 				else if(coordinate.equals("C1"))
@@ -83,7 +81,7 @@ public class UserInput
 							}
 						else
 							{
-							userInputXandOCordinates();
+							userInputXCordinates();
 							}
 					}
 				else if(coordinate.equals("C2"))
@@ -95,7 +93,7 @@ public class UserInput
 							}
 						else
 							{
-							userInputXandOCordinates();
+							userInputXCordinates();
 							}
 					}
 				else
@@ -106,14 +104,17 @@ public class UserInput
 							}
 						else
 							{
-							userInputXandOCordinates();
+							userInputXCordinates();
 							}
 					}
-				}
-			
-			//O if statement 
-			if(PlayGame.firstInput.equals("O"))
-				{
+			}
+			public static void userInputOCordinates()
+			{
+				//Prompt user with coordinate question
+				System.out.println("Please input a cordinate");
+				//Allow user to input coordinate
+				String coordinate = PlayGame.userStringInput.nextLine();
+				//O if statement 
 				if(coordinate.equals("A1"))
 					{
 						if(PlayGame.myGrid[0][0].equals(" "))
@@ -122,7 +123,7 @@ public class UserInput
 							}
 						else
 							{
-							userInputXandOCordinates();
+							userInputOCordinates();
 							}
 					}
 				else if(coordinate.equals("A2"))
@@ -133,86 +134,86 @@ public class UserInput
 							}
 						else
 							{
-							userInputXandOCordinates();
+							userInputOCordinates();
 							}
 					}
 				else if(coordinate.equals("A3"))
 					{
 						if(PlayGame.myGrid[0][2].equals(" "))
 							{
-								PlayGame.myGrid[0][2] = "O";
+							PlayGame.myGrid[0][2] = "O";
 							}
 						else
 							{
-								userInputXandOCordinates();
+							userInputOCordinates();
 							}
 					}
 				else if(coordinate.equals("B1"))
 					{
 						if(PlayGame.myGrid[1][0].equals(" "))
 							{
-								PlayGame.myGrid[1][0] = "O";
+							PlayGame.myGrid[1][0] = "O";
 							}
 						else
 							{
-								userInputXandOCordinates();
+							userInputOCordinates();
 							}
 					}
 				else if(coordinate.equals("B2"))
 					{
 						if(PlayGame.myGrid[1][1].equals(" "))
 							{
-								PlayGame.myGrid[1][1] = "O";
+							PlayGame.myGrid[1][1] = "O";
 							}
 						else
 							{
-								userInputXandOCordinates();
+							userInputOCordinates();
 							}
 					}
 				else if(coordinate.equals("B3"))
 					{
 						if(PlayGame.myGrid[1][2].equals(" "))
 							{
-								PlayGame.myGrid[1][2] = "O";
+							PlayGame.myGrid[1][2] = "O";
 							}
 						else
 							{
-								userInputXandOCordinates();
+							userInputOCordinates();
 							}
 					}
 				else if(coordinate.equals("C1"))
 					{
 						if(PlayGame.myGrid[2][0].equals(" "))
 							{
-								PlayGame.myGrid[2][0] = "O";
+							PlayGame.myGrid[2][0] = "O";
 							}
 						else
 							{
-								userInputXandOCordinates();
+							userInputOCordinates();
 							}
 					}
 				else if(coordinate.equals("C2"))
 					{
 						if(PlayGame.myGrid[2][1].equals(" "))
 							{
-								PlayGame.myGrid[2][1] = "O";
+							PlayGame.myGrid[2][1] = "O";
 							}
 						else
 							{
-								userInputXandOCordinates();
+							userInputOCordinates();
 							}
 					}
 				else
 					{
 						if(PlayGame.myGrid[2][2].equals(" "))
 							{
-								PlayGame.myGrid[2][2] = "O";
+							PlayGame.myGrid[2][2] = "O";
 							}
 						else
 							{
-								userInputXandOCordinates();
+							userInputOCordinates();
 							}
 					}
-				}
 			}
 	}
+
